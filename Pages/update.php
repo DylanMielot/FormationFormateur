@@ -30,6 +30,7 @@
                         try{
                             update_personne();
                             
+                            //connexion a la bdd + requête (Ne pas reproduire dans les exercices, ça sera faux ! )
                             $bdd = connect();
                             $query = $bdd->query("select * from personne where prenom like 'anthony' and nom like 'melin'");
                             $query2 = $bdd->query('select * from personne');

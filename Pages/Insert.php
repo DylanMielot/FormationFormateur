@@ -25,16 +25,15 @@
                     <?php
                         require('../Exercices/Exercice_4_Insert.php');
                         try{
+                            //connexion a la bdd + requête (Ne pas reproduire dans les exercices, ça sera faux ! )
                             $bdd = connect();
-                            $query = $bdd->prepare("select * from personne");
-                            $query->execute();
+                            $query = $bdd->query("select * from personne");
                             $data_true = $query->fetchAll();
 
                             insert_personnes();
 
                             $bdd = connect();
-                            $query2 = $bdd->prepare("select * from personne");
-                            $query2->execute();
+                            $query2 = $bdd->query("select * from personne");
                             $data = $query2->fetchAll();
 
                             if(count($data) > count($data_true)){

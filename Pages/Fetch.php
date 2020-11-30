@@ -28,7 +28,7 @@
                         try{
                             $data = reception_personnes();
                             
-                            //connexion a la bdd + requête (Ne pas reproduire dans les exercices, ca sera faux ! )
+                            //connexion a la bdd + requête (Ne pas reproduire dans les exercices, ça sera faux ! )
                             $bdd = connect();
                             $reponse = $bdd->query('select * from personne');
                             $data_true = $reponse->fetchAll();

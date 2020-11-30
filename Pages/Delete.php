@@ -25,6 +25,7 @@
                     <?php
                         require('../Exercices/Exercice_6_Delete.php');
 
+                        //connexion a la bdd + requête (Ne pas reproduire dans les exercices, ça sera faux ! )
                         $bdd = connect();
                         $query = $bdd->query("select * from personne");
                         $data_true = $query->fetchAll();
