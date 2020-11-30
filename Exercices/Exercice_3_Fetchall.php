@@ -11,7 +11,7 @@ function reception_personnes(){
     // L'objectif est de return un tableau contenant toute les informations de la table personne.
 
     $bdd = connect();
-    $query = $bdd->preare('select * from personne');
+    $query = $bdd->prepare('select * from personne');
     $query->execute();
     $data = $query->fetchAll();
     

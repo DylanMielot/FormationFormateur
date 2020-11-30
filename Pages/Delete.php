@@ -24,20 +24,29 @@
 
                     <?php
                         require('../Exercices/Exercice_6_Delete.php');
+
+                        $bdd = connect();
+                        $query = $bdd->query("select * from personne");
+                        $data_true = $query->fetchAll();
+
+                        echo "<table border style='width:200px;margin:0 auto;'><tr><th>Prenom</th><th>Nom</th><th>Age</th></tr>";
+                                
+                        //tableau d'affichage
+                        foreach($data_true as $personne){
+                            echo "<tr><td>" . $personne['prenom'] . "</td><td>" . $personne['nom'] . "</td><td>" . $personne['age'] . "</td></tr>";
+                        }
+                        echo "</table> <br>";
+
                         try{
-                            $bdd = connect();
-                            $query = $bdd->prepare("select * from personne");
-                            $query->execute();
-                            $data_true = $query->fetchAll();
 
                             delete_personnes();
 
                             $bdd = connect();
-                            $query2 = $bdd->prepare("select * from personne");
-                            $query2->execute();
+                            $query2 = $bdd->query("select * from personne");
                             $data = $query2->fetchAll();
 
                             if(count($data) < count($data_true)){
+                                echo "Données après suppression : ";
                                 echo "<table border style='width:200px;margin:0 auto;'><tr><th>Prenom</th><th>Nom</th><th>Age</th></tr>";
                                 
                                 //tableau d'affichage

@@ -7,11 +7,11 @@ function reception_personnes(){
 
 
     // Les 3 points d'interrogations doivent être remplacés par les bonnes méthodes :
-    // prepare, execute ou fetchAll.
+    // prepare, execute ou fetch.
     // L'objectif est de return un tableau contenant toute les informations de la table personne.
 
     $bdd = connect();
-    $query = $bdd->preare("select * from personne");
+    $query = $bdd->prepare("select * from personne");
     $query->execute();
 
     $data = [];

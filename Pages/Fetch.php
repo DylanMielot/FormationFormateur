@@ -28,11 +28,10 @@
                         try{
                             $data = reception_personnes();
                             
-                            //connexion a la bdd
+                            //connexion a la bdd + requête (Ne pas reproduire dans les exercices, ca sera faux ! )
                             $bdd = connect();
-                            $query = $bdd->prepare('select * from personne');
-                            $query->execute();
-                            $data_true = $query->fetchAll();
+                            $reponse = $bdd->query('select * from personne');
+                            $data_true = $reponse->fetchAll();
                             
                             //on compare les données attendues et les données reçues
                             if($data_true === $data){

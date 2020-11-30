@@ -31,13 +31,10 @@
                             update_personne();
                             
                             $bdd = connect();
-                            $query = $bdd->prepare("select * from personne where prenom like ? and nom like ?");
-                            $query2 = $bdd->prepare('select * from personne');
+                            $query = $bdd->query("select * from personne where prenom like 'anthony' and nom like 'melin'");
+                            $query2 = $bdd->query('select * from personne');
 
-                            $query2->execute();
                             $data = $query2->fetchAll();
-
-                            $query->execute(['anthony', 'melin']);
                             $anthony = $query->fetch();
 
                             if($anthony['age'] == 23){
@@ -57,7 +54,7 @@
                                     <a class='btn btn-sm btn-success' href='Delete.php'> Étape suivante </a>
                                 </div>";
                             } else {
-                                throw new Exception('L\'age d\'anthony enregistré n\'est pas 24, vérifiez le nom de vos variables et votre requête');
+                                throw new Exception('L\'age d\'anthony enregistré n\'est pas 23, vérifiez le nom de vos variables et votre requête');
                             }
                         }
                         catch(Throwable $e)
