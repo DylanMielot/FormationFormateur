@@ -10,8 +10,8 @@ function update_personne(){
     // prepare et execute.
 
     $bdd = connect();
-    $query = $bdd->repare("update personne set age=? where prenom like ? ");
-    $query->execute([23, 'Anthony']);
+
+    
 
 
 //============================================================================================//

@@ -6,17 +6,12 @@ function reception_personnes(){
 //====================================== ZONE D'EXERCICE =====================================//
 
 
-    // Les 3 points d'interrogations doivent être remplacés par les bonnes méthodes :
-    // prepare, execute ou fetch.
+    // Utilisez les bonnes méthodes pour envoyer un tableau contenant les données.
+    // Les 3 méthodes : prepare, execute et fetchAll.
     // L'objectif est de return un tableau contenant toute les informations de la table personne.
 
     $bdd = connect();
-    $query = $bdd->repare('select * from personne');
-    $query->execute();
-    $data = $query->fetchAll();
-    
-    //tableau des données récupérées
-    return $data;
+
 
 
 //============================================================================================//
