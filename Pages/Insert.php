@@ -22,6 +22,8 @@
                         <br>
                     </p>
 
+                    <!-- Vérification exercice -->
+
                     <?php
                         require('../Exercices/Exercice_4_Insert.php');
                         try{

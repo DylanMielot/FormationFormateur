@@ -20,6 +20,9 @@
                     <br>
                     <u>Pensez a actualiser cette page afin de vérifier l'affichage des personnes.</u>
                     <br>
+                    
+                    <!-- Vérification exercice -->
+                    
                     <div style="margin-top:15px;"></div>
                     <?php
 

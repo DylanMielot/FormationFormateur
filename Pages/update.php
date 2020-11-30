@@ -25,6 +25,8 @@
                         <u>Pensez a actualiser cette page pour prendre compte des changements.</u>
                     </p>
 
+                    <!-- Vérification exercice -->
+
                     <?php
                         require('../Exercices/Exercice_5_Update.php');
                         try{

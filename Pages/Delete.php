@@ -22,6 +22,8 @@
                         <br>
                     </p>
 
+                    <!-- Vérification exercice -->
+
                     <?php
                         require('../Exercices/Exercice_6_Delete.php');
 
@@ -45,7 +47,8 @@
                             $bdd = connect();
                             $query2 = $bdd->query("select * from personne");
                             $data = $query2->fetchAll();
-
+                            
+                            //on compare le tableau avant et après appel de la fonction delete
                             if(count($data) < count($data_true)){
                                 echo "Données après suppression : ";
                                 echo "<table border style='width:200px;margin:0 auto;'><tr><th>Prenom</th><th>Nom</th><th>Age</th></tr>";

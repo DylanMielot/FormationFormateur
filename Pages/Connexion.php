@@ -23,6 +23,8 @@
                         <u>Pensez a actualiser cette page pour actualiser le status.</u>
                     </p>
 
+                    <!-- Vérification exercice -->
+                    
                     <?php
                         require('../Exercices/Exercice_1_connexion.php');
                         try{
