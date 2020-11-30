@@ -10,7 +10,7 @@ function delete_personnes(){
     // prepare et execute.
 
     $bdd = connect();
-    $query = $bdd->prepare("delete from personne where prenom like ?");
+    $query = $bdd->repare("delete from personne where prenom like ?");
     $query->execute(['lucas']);
 
 

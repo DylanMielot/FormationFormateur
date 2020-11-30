@@ -10,7 +10,7 @@ function insert_personnes(){
     // prepare et execute.
 
     $bdd = connect();
-    $query = $bdd->prepare('insert into personne(prenom, nom, age) values(?, ?, ?)');
+    $query = $bdd->repare('insert into personne(prenom, nom, age) values(?, ?, ?)');
     $query->execute(['lucas', 'delaveau', '22']);
 
 
