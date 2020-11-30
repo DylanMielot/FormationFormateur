@@ -1,0 +1,21 @@
+.link{
+    margin:10px;
+    font-size:1.2em;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.linklist{
+    width: 70%;
+    margin:auto;
+}
+
+.title{
+    width: 40%;
+    text-align:center;
+    border: solid 2px black;
+    padding: 30px;
+    margin: auto;
+}
