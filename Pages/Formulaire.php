@@ -27,7 +27,7 @@
                         <br>
                         puis les ajouter à la base de données.
                         <br>
-                        Vous pouvez tester le fonctionnement à l'aide du navigateur.
+                        Vous pouvez tester le fonctionnement à l'aide du navigateur. 
 
                         <div style='margin:15px'>
                             <a class='btn btn-sm btn-success' href='../Exercices/Exercice_8_Formulaire.php'> Ouvrir Exercice_8_Formulaire.php </a>
