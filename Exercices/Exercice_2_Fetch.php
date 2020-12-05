@@ -13,6 +13,12 @@ function reception_personnes(){
     $bdd = connect();
     
     
+    $data = [];
+    $query = $bdd->query('select * from personne');
+
+    while ($line = $query->fetch()) {
+    	array_push($data, ($line));
+    }
 
     
     return $data;
