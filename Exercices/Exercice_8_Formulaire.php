@@ -15,8 +15,6 @@
     <h3 class="card-header" style="text-align:center;">Exercice formulaire</h3>
     <div class="card-body" style="text-align:center;">
 
-    Creez une page et un formulaire associé permettant d'inserer et de supprimer une personne de la table personne.
-    Pour l'insertion, on doit pouvoir saisir le nom, prenom et l'age. Pour la suppression seul le nom pourra être employe.
     <br><br>
 
 
