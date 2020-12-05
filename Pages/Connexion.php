@@ -29,15 +29,29 @@
                         require('../Exercices/Exercice_1_connexion.php');
                         try{
                             $connexion = connect();
-                            echo "<div style='margin:15px;color:green'>
+                            echo "
+                                <div style='margin:15px;color:green'>
                                     STATUS : CONNECTE
-                                    </div>
-                                    <a class='btn btn-sm btn-success' href='Fetch.php'> Étape suivante </a>";
+                                </div>
+                                <a class='btn btn-sm btn-success' href='Fetch.php'> Étape suivante </a>";
+
+                            $q = "
+                                DROP TABLE IF EXISTS personne;
+                                CREATE TABLE personne (
+                                    nom VARCHAR(50),
+                                    prenom VARCHAR(50),
+                                    age INT
+                                    );
+                                INSERT INTO `personne`(`nom`, `prenom`, `age`) VALUES ('MIELOT','Dylan',22);
+                                INSERT INTO `personne`(`nom`, `prenom`, `age`) VALUES ('MELIN','Anthony',22);
+                            ";
+                            $connexion->query($q);
                         }
                         catch(Throwable $e)
                         {
-                            echo "<div style='color:red'>
-                            STATUS : NON CONNECTE
+                            echo "
+                            <div style='color:red'>
+                                STATUS : NON CONNECTE
                             </div> <br>
                             <div class='card'>
                                 <u><h5 class='card-title'> Erreur :</h5></u>

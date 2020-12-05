@@ -16,7 +16,7 @@
                     <p>
                         Vous allez devoir inserer de nouvelles données dans la table personne. Modifiez le fichier "Exercice_4_Insert.php" contenu dans le dossier "Exercices"
                         <br>
-                        pour ajouter une nouvelle personne a la table.
+                        pour ajouter une nouvelle personne (vous) a la table.
                         <br>
                         <u>Pensez a actualiser cette page.</u>
                         <br>
@@ -28,26 +28,21 @@
                         require('../Exercices/Exercice_4_Insert.php');
                         try{
                             //connexion a la bdd + requête (Ne pas reproduire dans les exercices, ça sera faux ! )
-                            $bdd = connect();
-                            $query = $bdd->query("select * from personne");
-                            $data_true = $query->fetchAll();
-
                             insert_personnes();
 
                             $bdd = connect();
-                            $query2 = $bdd->query("select * from personne");
-                            $data = $query2->fetchAll();
+                            $query = $bdd->query("select * from personne");
+                            $data = $query->fetchAll();
 
-                            if(count($data) > count($data_true)){
-                                echo "<table border style='width:200px;margin:0 auto;'><tr><th>Prenom</th><th>Nom</th><th>Age</th></tr>";
-                                
-                                //tableau d'affichage
-                                foreach($data as $personne){
-                                    echo "<tr><td>" . $personne['prenom'] . "</td><td>" . $personne['nom'] . "</td><td>" . $personne['age'] . "</td></tr>";
-                                }
-                                
+                            echo "<table border style='width:200px;margin:0 auto;'><tr><th>Prenom</th><th>Nom</th><th>Age</th></tr>";
+                            foreach($data as $personne) echo "<tr><td>" . $personne['prenom'] . "</td><td>" . $personne['nom'] . "</td><td>" . $personne['age'] . "</td></tr>";
+                            echo "</table>";
+
+                            if(count($data) > 2){
+                            
+
                                 //bouton success
-                                echo "</table>
+                                echo "
                                 <div style='margin:15px;color:green'>
                                     DONNÉES INSÉRÉES
                                 </div>

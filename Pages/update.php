@@ -35,21 +35,16 @@
                             //connexion a la bdd + requête (Ne pas reproduire dans les exercices, ça sera faux ! )
                             $bdd = connect();
                             $query = $bdd->query("select * from personne where prenom like 'anthony' and nom like 'melin'");
-                            $query2 = $bdd->query('select * from personne');
-
-                            $data = $query2->fetchAll();
                             $anthony = $query->fetch();
 
+                            echo "<table border style='width:200px;margin:0 auto;'><tr><th>Prenom</th><th>Nom</th><th>Age</th></tr>";
+                            echo "<tr><td>" . $anthony['prenom'] . "</td><td>" . $anthony['nom'] . "</td><td>" . $anthony['age'] . "</td></tr>";
+                            echo "</table>";
+
                             if($anthony['age'] == 23){
-                                echo "<table border style='width:200px;margin:0 auto;'><tr><th>Prenom</th><th>Nom</th><th>Age</th></tr>";
-                                
-                                //tableau d'affichage
-                                foreach($data as $personne){
-                                    echo "<tr><td>" . $personne['prenom'] . "</td><td>" . $personne['nom'] . "</td><td>" . $personne['age'] . "</td></tr>";
-                                }
                                 
                                 //bouton success
-                                echo "</table>
+                                echo "
                                 <div style='margin:15px;color:green'>
                                     DONNÉES MODIFIÉES
                                 </div>

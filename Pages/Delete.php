@@ -25,38 +25,23 @@
                     <!-- Vérification exercice -->
 
                     <?php
-                        require('../Exercices/Exercice_6_Delete.php');
-
-                        //connexion a la bdd + requête (Ne pas reproduire dans les exercices, ça sera faux ! )
-                        $bdd = connect();
-                        $query = $bdd->query("select * from personne");
-                        $data_true = $query->fetchAll();
-
-                        echo "<table border style='width:200px;margin:0 auto;'><tr><th>Prenom</th><th>Nom</th><th>Age</th></tr>";
-                                
-                        //tableau d'affichage
-                        foreach($data_true as $personne){
-                            echo "<tr><td>" . $personne['prenom'] . "</td><td>" . $personne['nom'] . "</td><td>" . $personne['age'] . "</td></tr>";
-                        }
-                        echo "</table> <br>";
-
-                        try{
+                        try {
+                            require('../Exercices/Exercice_6_Delete.php');
 
                             delete_personnes();
 
+                            //connexion a la bdd + requête (Ne pas reproduire dans les exercices, ça sera faux ! )
                             $bdd = connect();
-                            $query2 = $bdd->query("select * from personne");
-                            $data = $query2->fetchAll();
-                            
+                            $query = $bdd->query("select * from personne");
+                            $data = $query->fetchAll();
+
+                            //tableau d'affichage
+                            echo "<table border style='width:200px;margin:0 auto;'><tr><th>Prenom</th><th>Nom</th><th>Age</th></tr>";
+                            foreach($data as $personne) echo "<tr><td>" . $personne['prenom'] . "</td><td>" . $personne['nom'] . "</td><td>" . $personne['age'] . "</td></tr>";
+                            echo "</table>";
+
                             //on compare le tableau avant et après appel de la fonction delete
-                            if(count($data) < count($data_true)){
-                                echo "Données après suppression : ";
-                                echo "<table border style='width:200px;margin:0 auto;'><tr><th>Prenom</th><th>Nom</th><th>Age</th></tr>";
-                                
-                                //tableau d'affichage
-                                foreach($data as $personne){
-                                    echo "<tr><td>" . $personne['prenom'] . "</td><td>" . $personne['nom'] . "</td><td>" . $personne['age'] . "</td></tr>";
-                                }
+                            if(count($data) < 3){
                                 
                                 //bouton success
                                 echo "</table>
