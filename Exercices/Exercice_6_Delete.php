@@ -10,7 +10,7 @@ function delete_personnes(){
     // prepare et execute.
 
     $bdd = connect();
-
+    $bdd->query("DELETE FROM `personne` WHERE `nom` like 'MONNOM'");
     
 
 
