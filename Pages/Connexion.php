@@ -44,6 +44,18 @@
                                     );
                                 INSERT INTO `personne`(`nom`, `prenom`, `age`) VALUES ('MIELOT','Dylan',22);
                                 INSERT INTO `personne`(`nom`, `prenom`, `age`) VALUES ('MELIN','Anthony',22);
+
+                                DROP TABLE IF EXISTS gphy;
+                                CREATE TABLE gphy (
+                                    nom VARCHAR(50),
+                                    prenom VARCHAR(50),
+                                    statut VARCHAR(50)
+                                    );
+                                INSERT INTO gphy(nom, prenom, statut) VALUES ('GENIET', 'Annie', 'PROFESSEUR');
+                                INSERT INTO gphy(nom, prenom, statut) VALUES ('MIELOT', 'Dylan', 'ETUDIANT');
+                                INSERT INTO gphy(nom, prenom, statut) VALUES ('FOUSSE', 'Allan', 'PROFESSEUR');
+                                INSERT INTO gphy(nom, prenom, statut) VALUES ('GENIET', 'Dominique', 'PROFESSEUR');
+                                INSERT INTO gphy(nom, prenom, statut) VALUES ('MELIN', 'Anthony', 'ETUDIANT');
                             ";
                             $connexion->query($q);
                         }

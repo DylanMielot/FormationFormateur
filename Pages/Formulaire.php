@@ -20,7 +20,7 @@
                         <br>
                         vous allez devoir créer un formulaire ! 
                         <br>
-                        Ouvrez le fichier "Exercice_7_Formulaire.php", vous y trouverez le code minimal pour une page HTML avec son formulaire.
+                        Ouvrez le fichier "Exercice_8_Formulaire.php", vous y trouverez le code minimal pour une page HTML avec son formulaire.
                         <br>
                         Ensuite, ouvrez le fichier "formulaire.php". Ce fichier PHP a pour objectif de réceptionner les données, vérifier les données si besoins (valeurs null etc..),
                         <br>
@@ -29,7 +29,7 @@
                         Vous pouvez tester le fonctionnement à l'aide du navigateur.
 
                         <div style='margin:15px'>
-                            <a class='btn btn-sm btn-success' href='../Exercices/Exercice_7_Formulaire.php'> Ouvrir Exercice_7_Formulaire.php </a>
+                            <a class='btn btn-sm btn-success' href='../Exercices/Exercice_8_Formulaire.php'> Ouvrir Exercice_8_Formulaire.php </a>
                         </div>
                     </p>
                 </div>
