@@ -18,7 +18,7 @@
                         <br>
                         Dans cet exercice, vous allez devoir mettre en forme un tableau de données avec un fichier CSS.
                         <br>
-                        Dans un premier temps, vous allez devoir récupérer les données de la table "Gphy", et les insérer dans un tableau.
+                        Dans un premier temps, ouvrez le fichier "Exercice_7_css.php" vous allez devoir récupérer les données de la table "Gphy", et les insérer dans un tableau.
                         <br>
                         La table gphy contient 3 colonnes : "nom", "prenom" et "statut". L'objectif est de difféncier les personnes selon leur statut.
                         <br>
