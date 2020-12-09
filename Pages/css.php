@@ -24,6 +24,10 @@
                         <br>
                         Le statut peut être : "ETUDIANT" ou "PROFESSEUR".
                         <br>
+                        <br>
+                        <div style='margin:15px'>
+                            <a class='btn btn-sm btn-success' href='../Exercices/Exercice_7_css.php'> Exercice </a>
+                        </div>
                     </p>
                 </div>
             </div>
