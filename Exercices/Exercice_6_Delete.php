@@ -11,9 +11,11 @@ function delete_personnes(){
 
     $bdd = connect();
 
+    $values = array('MONNOM', 'Monprenom');
+
+    $query = $bdd->prepare("DELETE FROM `personne` WHERE `nom` like ? and `prenom` like ?");
+    $query->execute($values);
     
-
-
 //============================================================================================//
 }
 

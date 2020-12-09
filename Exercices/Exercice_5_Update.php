@@ -11,9 +11,11 @@ function update_personne(){
 
     $bdd = connect();
 
+    $values = array(23, 'melin', 'anthony');
+
+    $query = $bdd->prepare("UPDATE `personne` SET `age`=? WHERE `nom` like ? and `prenom` like ?");
+    $query->execute($values);
     
-
-
 //============================================================================================//
 }
 

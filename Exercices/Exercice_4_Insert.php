@@ -11,8 +11,11 @@ function insert_personnes(){
 
     $bdd = connect();
 
-    
+    $values = array('MONNOM', 'Monprenom', 99);
 
+	$query = $bdd->prepare("INSERT INTO `personne`(`nom`, `prenom`, `age`) VALUES (?, ?, ?)");
+    $query->execute($values);
+    
 
 //============================================================================================//
 }
