@@ -20,7 +20,7 @@
                         <br>
                         Dans un premier temps, ouvrez le fichier "Exercice_7_css.php" vous allez devoir récupérer les données de la table "Gphy", et les insérer dans un tableau.
                         <br>
-                        La table gphy contient 3 colonnes : "nom", "prenom" et "statut". L'objectif est de difféncier les personnes selon leur statut.
+                        La table gphy contient 3 colonnes : "nom", "prenom" et "statut". L'objectif est de différencier les personnes selon leur statut.
                         <br>
                         Le statut peut être : "ETUDIANT" ou "PROFESSEUR".
                         <br>
