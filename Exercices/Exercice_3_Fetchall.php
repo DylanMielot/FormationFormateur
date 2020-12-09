@@ -12,7 +12,9 @@ function reception_personnes(){
 
     $bdd = connect();
     
-    $query = $bdd->query('select * from personne');
+    $query = $bdd->prepare('select * from personne');
+    $query->execute();
+
     $data = $query->fetchAll();
 
     return $data;
