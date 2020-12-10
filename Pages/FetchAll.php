@@ -11,6 +11,7 @@
     background-size: cover;">
         <div class="container" style="margin-top:5%">
             <div class="card" style="background-color: rgba(256, 256, 256, 0.95);">
+            <a href='..'> Menu principal </a>
                 <h3 class="card-header" style="text-align:center;">Récupération de données : FetchAll</h3>
                 <div class="card-body" style="text-align:center;">
                 Vous avez appris à réceptionner les données une par une, et a les mettre dans un tableau.

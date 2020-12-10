@@ -11,6 +11,7 @@
     background-size: cover;">
         <div class="container" style="margin-top:5%">
             <div class="card" style="background-color: rgba(256, 256, 256, 0.95);">
+            <a href='..'> Menu principal </a>
                 <h3 class="card-header" style="text-align:center;">Récupération de données : Fetch</h3>
                 <div class="card-body" style="text-align:center;">
                     Maintenant que vous êtes connecté à la base de données, vous allez devoir récupérer des données contenu dans la table "personne".
