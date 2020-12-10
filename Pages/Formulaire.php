@@ -25,7 +25,7 @@
                         <br>
                         Ensuite, ouvrez le fichier "formulaire.php". Ce fichier PHP a pour objectif de réceptionner les données, vérifier les données si besoins (valeurs null etc..),
                         <br>
-                        puis les ajouter à la base de données.
+                        Il faut pouvoir ajouter ou supprimer les personnes de la base de données
                         <br>
                         Vous pouvez tester le fonctionnement à l'aide du navigateur.
 
