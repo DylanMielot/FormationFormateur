@@ -26,7 +26,7 @@
                         <br>
                         <br>
                         <div style='margin:15px'>
-                            <a class='btn btn-sm btn-success' href='../Exercices/Exercice_7_Css.php'> Exercice </a>
+                            <a class='btn btn-sm btn-success' href='../Exercices/Exercice_7_css.php'> Exercice </a>
                         </div>
                     </p>
                 </div>

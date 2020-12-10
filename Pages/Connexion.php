@@ -26,7 +26,7 @@
                     <!-- Vérification exercice -->
                     
                     <?php
-                        require('../Exercices/Exercice_1_connexion.php');
+                        require('../Exercices/Exercice_1_Connexion.php');
                         try{
                             $connexion = connect();
                             echo "
