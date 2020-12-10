@@ -20,10 +20,27 @@
     étudiants soient dissociable.
     
     -->
+    <?php
 
+        $style_prof = "color: red;";
+        $style_etu = "color: blue;";
 
-        
+        $bdd = new PDO('mysql:host=127.0.0.1;dbname=FormaFor;=charset=utf8', "root", "");
+    
+        $query = $bdd->prepare('select * from gphy');
+        $query->execute();
 
+        $data = $query->fetchAll();
+
+        foreach($data as $personne){
+
+            if ($personne['statut'] == "PROFESSEUR")
+                echo "<p style=".$style_prof.">" . $personne['prenom'] . " " . $personne['nom'] . "</p>";
+            else
+                echo "<p style='".$style_etu."'>" . $personne['prenom'] . " " . $personne['nom'] . "</p>";
+        }
+    
+    ?>
 
     <!--============================================================================================-->
 
