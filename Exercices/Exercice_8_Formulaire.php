@@ -27,7 +27,21 @@
 
         <form action="formulaire.php" method="post">
 
-            <input type='text' name='Chaine' value='Azerty'>
+            <label for="Nom"> Nom </label>
+            <input id="Nom" type='text' name='Nom' value='Azerty'> <br>
+
+            <label for="Prenom"> Prenom </label>
+            <input id="Prenom" type='text' name='Prenom' value='Qwerty'> <br>
+
+            <label for="Age"> Age </label>
+            <input id="Age" type='number' name='Age' value='20'> <br>
+
+            <input type='radio' id="Insert" name='Query' value='Insert'>
+            <label for="Insert"> Insert </label>
+
+            <input type='radio' id="Delete" name='Query' value='Delete'>
+            <label for="Delete"> Delete </label>
+
             <input type='submit' name='Bouton'>
 
         </form>
