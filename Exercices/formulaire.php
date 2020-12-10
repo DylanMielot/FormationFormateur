@@ -34,4 +34,4 @@ foreach($_POST as $key=>$value) {
 //============================================================================================//
 
 ?>
-<a href='Exercice_7_Formulaire.php'> Retour a la page </a>
+<a href='Exercice_8_Formulaire.php'> Retour a la page </a>
