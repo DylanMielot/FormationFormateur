@@ -25,7 +25,7 @@
 
     Premiere chose a faire : vous connecter
     Ensuite récupérer les données avec une requête
-    Affichez les
+    Affichez les personnes
     Mettez en forme
     
     -->
