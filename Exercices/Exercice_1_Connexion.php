@@ -5,12 +5,9 @@ function connect()
 
 //====================================== ZONE D'EXERCICE=====================================//
 
-
-
-    $sql_hostname=""; //Nom de l'hote
-    $sql_dbname=""; //Nom de la base de données a laquelle vous souhaitez vous connecter
-    $sql_user=""; //Nom de l'utilisateur pour se connecter a la base de données
-    $sql_mdp=""; //Mot de passe de l'utilisateur 
+    //Complétez la ligne suivante en indiquant le nom de l'hote, le nom de la base de données, votre nom d'utilisateur PHPMyAdmin, votre mot de passe PHPMyadmin
+    //Lorsque vous souhaitez tester, remettez le fichier sur le serveur et actualisez la page "connexion"
+    // Rappel : hote; dbname, user, mdp
 
     return new PDO('mysql:');
 
