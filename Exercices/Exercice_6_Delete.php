@@ -9,12 +9,13 @@ function delete_personnes(){
     // Supprimez une personne dans la table "personne" en utilisant les méthodes
     // prepare et execute.
 
+    //connexion a la base de données
     $bdd = connect();
 
-    $values = array('MONNOM', 'Monprenom');
-
+    //preparation de la requête
     $query = $bdd->prepare("DELETE FROM `personne` WHERE `nom` like ? and `prenom` like ?");
-    $query->execute($values);
+    //execution de la requête en spécifiant les paramètre de la requête dans un tableau
+    $query->execute(array('MONNOM', 'Monprenom'));
     
 //============================================================================================//
 }

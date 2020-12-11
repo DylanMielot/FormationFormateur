@@ -10,13 +10,20 @@ function reception_personnes(){
     // Les 3 méthodes : prepare, execute et fetch.
     // L'objectif est de return un tableau contenant toute les informations de la table personne.
 
+    //connexion a la base de données
     $bdd = connect();
     
-    $query = $bdd->prepare('select * from personne');
-    $query->execute();
+    //préparation de la requête
+    $requete = $bdd->prepare('select * from personne');
+    //execution de la requête
+    $requete->execute();
 
+    //Création d'un tableau data vide
     $data = [];
-    while ($line = $query->fetch()) {
+
+    //Tant que $requete->fetch() renvoie une ligne, alors $line prend la valeur de cette ligne
+    while ($line = $requete->fetch()) {
+        //on insère la valeur de $line dans le tableau $data
     	array_push($data, ($line));
     }
 

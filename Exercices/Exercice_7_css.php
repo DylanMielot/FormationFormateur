@@ -21,22 +21,27 @@
     -->
     <?php
 
-        $style_prof = "color: red;";
-        $style_etu = "color: blue;";
-
+        //connexion a la base de données
         $bdd = new PDO('mysql:host=127.0.0.1;dbname=FormaFor;=charset=utf8', "root", "");
-    
+
+        //préparation de la requête
         $query = $bdd->prepare('select * from gphy');
+        //execution de la requête
         $query->execute();
 
+        //récupération des données retournées par la requête dans le tableau $data
         $data = $query->fetchAll();
 
+        // Pour chaque ligne du tableau $data (1 ligne = 1 personne)
         foreach($data as $personne){
-
-            if ($personne['statut'] == "PROFESSEUR")
-                echo "<p style=".$style_prof.">" . $personne['prenom'] . " " . $personne['nom'] . "</p>";
-            else
-                echo "<p style='".$style_etu."'>" . $personne['prenom'] . " " . $personne['nom'] . "</p>";
+            //Si le statut de la personne est professeur
+            if ($personne['statut'] == "PROFESSEUR"){
+                //On affiche son prenom et son nom en rouge
+                echo "<p style='color: red;'>" . $personne['prenom'] . " " . $personne['nom'] . "</p>";
+            }else{
+                //Sinon on affiche la personne en bleu
+                echo "<p style='color: blue;'>" . $personne['prenom'] . " " . $personne['nom'] . "</p>";
+            }
         }
     
     ?>

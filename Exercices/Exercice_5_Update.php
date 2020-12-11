@@ -9,12 +9,13 @@ function update_personne(){
     // Ajoutez une nouvelle personne dans la table "personne" en utilisant les méthodes
     // prepare et execute.
 
+    //connexion a la base de données
     $bdd = connect();
 
-    $values = array(23, 'melin', 'anthony');
-
-    $query = $bdd->prepare("UPDATE `personne` SET `age`=? WHERE `nom` like ? and `prenom` like ?");
-    $query->execute($values);
+    //preparation de la requête
+    $query = $bdd->prepare("UPDATE `personne` SET `age`=? WHERE `nom` like ? and `prenom` like ? ");
+    //execution de la requête en spécifiant les paramètre de la requête dans un tableau
+    $query->execute(array(23, 'melin', 'anthony'));
     
 //============================================================================================//
 }
