@@ -7,7 +7,7 @@ foreach($_POST as $key=>$value) {
 
 //====================================== ZONE D'EXERCICE =====================================//
 
-	// A partir des données recues, implementez les requetes necessaires afin :
+	// A partir des donnï¿½es recues, implementez les requetes necessaires afin :
 	//	- d'ajouter une personne
 	//  - de supprimer une personne
 
@@ -24,7 +24,7 @@ foreach($_POST as $key=>$value) {
 	$requete = $_POST["Query"];
 
 
-	// 2 - Connexion à la base de donnees -> Utilisation de PDO
+	// 2 - Connexion ï¿½ la base de donnees -> Utilisation de PDO
 
 	$bdd = new PDO('mysql:host=127.0.0.1;dbname=FormaFor;=charset=utf8', "root", "");
 
@@ -32,11 +32,11 @@ foreach($_POST as $key=>$value) {
 	// 3 - Utilisation de PDO pour effectuer la requete
 
 	if ($requete == "Insert") {
-		$query = $bdd->prepare($insert);
+		$query = $bdd->prepare("INSERT INTO `personne`(`nom`, `prenom`, `age`) VALUES (?, ?, ?)");
 		$query->execute(array($nom, $prenom, $age));
 	}
 	else if ($requete == "Delete") {
-		$query = $bdd->prepare($delete);
+		$query = $bdd->prepare("DELETE FROM `personne` WHERE `nom` like ? and `prenom` like ?");
 		$query->execute(array($nom, $prenom));
 	}
 

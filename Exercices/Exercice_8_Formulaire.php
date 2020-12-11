@@ -24,7 +24,10 @@
     
     -->
 
-
+        <!--Action permet de spécifier la page qui réceptionnera les données
+        Methode permet d'indiquer la méthode pour faire passer les données d'une page a l'autre
+        GET = les informations transitent dans l'URL
+        POST = les informations ne sont pas visibles dans l'URL -->
         <form action="formulaire.php" method="post">
 
             <label for="Nom"> Nom </label>
