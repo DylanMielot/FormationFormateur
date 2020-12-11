@@ -50,7 +50,7 @@
                                     DONNÉES SUPPRIMÉES
                                 </div>
                                 <div style='margin:15px'>
-                                    <a class='btn btn-sm btn-success' href='../index.html'> Terminé </a>
+                                    <a class='btn btn-sm btn-success' href='css.php'> Etape suivante </a>
                                 </div>";
                             } else {
                                 throw new Exception('Donnée(s) non supprimée(s), vérifiez le nom de vos variables et votre requête');

@@ -7,7 +7,7 @@ function connect()
 
 
                                //hote   //NomDeLaBase   //encodage(optionnel) //user //mdp(ici vide car il n'y en a pas)
-    return new PDO("mysql:host=127.0.0.1; dbname=FormaFor ; charset=utf8", "root", "");
+    return new PDO('mysql:host=127.0.0.1;dbname=FormaFor;charset=utf8', 'root', '');
 
 
 

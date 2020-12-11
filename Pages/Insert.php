@@ -48,7 +48,7 @@
                                     DONNÉES INSÉRÉES
                                 </div>
                                 <div style='margin:15px'>
-                                    <a class='btn btn-sm btn-success' href='Update.php'> Étape suivante </a>
+                                    <a class='btn btn-sm btn-success' href='update.php'> Étape suivante </a>
                                 </div>";
                             } else {
                                 throw new Exception('Nouvelle(s) donnée(s) non insérée(s), vérifiez le nom de vos variables et votre requête');
