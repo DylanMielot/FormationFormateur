@@ -7,9 +7,6 @@ foreach($_POST as $key=>$value) {
 
 //====================================== ZONE D'EXERCICE =====================================//
 
-	// A partir des données recues, implementez les requetes necessaires afin :
-	//	- d'ajouter une personne
-	//  - de supprimer une personne
 	
 
 	// 1 - Recupereration des donnees de la variable $_POST
@@ -19,13 +16,16 @@ foreach($_POST as $key=>$value) {
 
 
 
-	// 2 - Connexion à la base de donnees -> Utilisation de PDO
-
+	// 2 - Connexion ï¿½ la base de donnees -> Utilisation de PDO
+	// $bdd = new PDO('mysql:...')
+	
 
 
 
 
 	// 3 - Utilisation de PDO pour effectuer la requete
+	// $requete = $bdd->prepare(...)
+	// ...
 
 
 

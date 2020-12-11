@@ -18,8 +18,19 @@
     Ajoutez du code PHP afin de récupérer les données de la base "gphy", insérez les dans un tableau,
     puis créez un fichier css, et liez le a cette page php. Faites en sorte que les professeurs et les
     étudiants soient dissociable.
+
+    Attention ! ici vous n'êtes pas connecté a la base de données, vous devez vous reconnecter
+    $bdd = new PDO('mysql:...')
+    $requete = $bdd->prepare(...)
+
+    Premiere chose a faire : vous connecter
+    Ensuite récupérer les données avec une requête
+    Affichez les
+    Mettez en forme
     
     -->
+
+
 
 
         

@@ -10,6 +10,10 @@ function reception_personnes(){
     // Les 3 méthodes : prepare, execute et fetchAll.
     // L'objectif est de return un tableau contenant toute les informations de la table personne.
 
+    //Vous êtes deja connecté a la base de données grace a la fonction connect() (fonction de l'exercice 1)
+    //Commencez par préparer votre requête
+
+    //connexion a la base de données
     $bdd = connect();
 
 
