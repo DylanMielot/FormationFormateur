@@ -11,6 +11,7 @@
     background-size: cover;">
         <div class="container" style="margin-top:5%">
             <div class="card" style="background-color: rgba(256, 256, 256, 0.95);padding:20px;">
+            <a href='..'> Menu principal </a>
 
     <!--====================================== ZONE D'EXERCICE =====================================
     
