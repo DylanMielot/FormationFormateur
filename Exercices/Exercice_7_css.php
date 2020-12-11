@@ -23,7 +23,7 @@
     <?php
 
         //connexion a la base de données
-        $bdd = new PDO('mysql:host=127.0.0.1;dbname=FormaFor;=charset=utf8', "root", "");
+        $bdd = new PDO('mysql:host=127.0.0.1;dbname=FormaFor;charset=utf8', 'root', '');
 
         //préparation de la requête
         $query = $bdd->prepare('select * from gphy');
