@@ -7,13 +7,6 @@ foreach($_POST as $key=>$value) {
 
 //====================================== ZONE D'EXERCICE =====================================//
 
-	// A partir des donn�es recues, implementez les requetes necessaires afin :
-	//	- d'ajouter une personne
-	//  - de supprimer une personne
-
-	$insert = "INSERT INTO `personne`(`nom`, `prenom`, `age`) VALUES (?, ?, ?)";
-	$delete = "DELETE FROM `personne` WHERE `nom` like ? and `prenom` like ?";
-	
 
 	// 1 - Recupereration des donnees de la variable $_POST
 	// exemple : $valeur_bouton = $_POST['Bouton'];
@@ -30,13 +23,17 @@ foreach($_POST as $key=>$value) {
 
 
 	// 3 - Utilisation de PDO pour effectuer la requete
-
+	//Si le bouton radio était sur "insert"
 	if ($requete == "Insert") {
+		//préparation de la requête
 		$query = $bdd->prepare("INSERT INTO `personne`(`nom`, `prenom`, `age`) VALUES (?, ?, ?)");
+		//execution de la requête en spécifiant les paramètres de la requête récupérés a la première étape
 		$query->execute(array($nom, $prenom, $age));
 	}
 	else if ($requete == "Delete") {
+		//préparation de la requête
 		$query = $bdd->prepare("DELETE FROM `personne` WHERE `nom` like ? and `prenom` like ?");
+		//execution de la requête en spécifiant les paramètres de la requête récupérés a la première étape
 		$query->execute(array($nom, $prenom));
 	}
 
