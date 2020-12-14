@@ -13,3 +13,4 @@ Les fichiers "Exercice_x_xxxxxxx.php" contenus dans le dossiers "Exercices" sont
 le site ouvert dans votre navigateur, et que vous ne devez pas modifier.
 Lors de l'actualisation de la page, le script de l'exercice rempli précédemment est appelé par la page et vérifié. Si l'exercice est correctement complété, vous devriez pouvoir passer a l'exercice suivant.
 
+Lors de votre connexion a la base de données, deux tables "gphy" et "personnes" sont automatiquement créées et peuplés.
